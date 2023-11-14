@@ -16,5 +16,15 @@ namespace Translator
         {
             InitializeComponent();
         }
+
+        private void Translate_Click(object sender, EventArgs e)
+        {
+            var text = Input.Text.ToString();
+            if (InputLang.Text == "English" && OutputLang.Text == "English")
+            {
+                Output.Text = Input.Text;
+            }
+
+        }
     }
 }
