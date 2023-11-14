@@ -1,6 +1,6 @@
 ﻿namespace Translator
 {
-    partial class Form1
+    partial class Translator
     {
         /// <summary>
         /// Required designer variable.
