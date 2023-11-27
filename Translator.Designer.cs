@@ -1,4 +1,7 @@
-﻿namespace Translator
+﻿using System.Windows.Forms;
+using System.Windows;
+
+namespace Translator
 {
     partial class Translator
     {

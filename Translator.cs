@@ -15,6 +15,7 @@ namespace Translator
         public Translator()
         {
             InitializeComponent();
+            
         }
 
         private void Translate_Click(object sender, EventArgs e)
@@ -31,5 +32,6 @@ namespace Translator
         {
             this.Close();
         }
+
     }
 }
