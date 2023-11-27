@@ -25,6 +25,40 @@ namespace Translator
             {
                 Output.Text = Input.Text;
             }
+            if (InputLang.Text == "English" && OutputLang.Text == "Spanish")
+            {
+                Output.Clear();
+                string[] words = Input.Text.Split(new char[]{' '});
+                Word single = new Word(InputLang.Text, words[0]);
+                single = single.translate(OutputLang.Text);
+                Output.Text += single.Content + ' ';
+                for (int i = 1; i< words.Length; i++)
+                {
+                    single = new Word(InputLang.Text, words[i]);
+                    single = single.translate(OutputLang.Text);
+                    Output.Text += single.Content + ' ';
+                }
+
+            }
+            if (InputLang.Text == "Spanish" && OutputLang.Text == "English")
+            {
+                Output.Clear();
+                string[] words = Input.Text.Split(new char[] { ' ' });
+                Word single = new Word(InputLang.Text, words[0]);
+                single = single.translate(OutputLang.Text);
+                Output.Text += single.Content + ' ';
+                for (int i = 1; i < words.Length; i++)
+                {
+                    single = new Word(InputLang.Text, words[i]);
+                    single = single.translate(OutputLang.Text);
+                    Output.Text += single.Content + ' ';
+                }
+
+            }
+            if (InputLang.Text == "Spanish" && OutputLang.Text == "Spanish")
+            {
+                Output.Text = Input.Text;
+            }
 
         }
 

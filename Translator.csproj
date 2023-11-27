@@ -46,6 +46,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Sentence.cs" />
     <Compile Include="Translator.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -54,6 +55,7 @@
     </Compile>
     <Compile Include="LangTranslator.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Word.cs" />
     <EmbeddedResource Include="Translator.resx">
       <DependentUpon>Translator.cs</DependentUpon>
     </EmbeddedResource>
@@ -78,6 +80,10 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Database\english.txt" />
+    <Content Include="Database\spanish.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
