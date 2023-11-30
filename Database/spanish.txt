@@ -15,7 +15,7 @@ en
 son
 con
 como
-I
+yo
 su
 ellos
 ser
@@ -58,7 +58,7 @@ forma
 acerca de
 muchos
 entonces
-a ellos
+ellos
 escribir
 haría
 como
@@ -91,7 +91,11 @@ agua
 que
 llamar
 primero
+<<<<<<< HEAD
+quién
+=======
 oms
+>>>>>>> 7164a3a314670bca057b99f4f979e0c3fb4815d9
 puede
 abajo
 lado
@@ -135,7 +139,7 @@ decir
 ayuda
 bajo
 línea
-diferir de
+diferir
 doblar
 causa
 mucho
@@ -153,7 +157,7 @@ colocar
 tres
 desear
 aire
-Bueno
+bueno
 también
 jugar
 pequeño
@@ -187,7 +191,7 @@ necesidad
 casa
 imagen
 intentar
-a nosotros
+nosotros
 de nuevo
 animal
 punto
@@ -360,7 +364,7 @@ recordar
 paso
 temprano
 sostener
-Oeste
+oeste
 suelo
 interés
 alcanzar
@@ -681,7 +685,7 @@ tranquilo
 piedra
 diminuto
 trepar
-Frío
+frío
 diseño
 pobre
 lote
