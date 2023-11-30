@@ -64,7 +64,6 @@ namespace Translator
 
         private void Quit_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Github Test");
             this.Close();
         }
 
