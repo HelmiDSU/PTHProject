@@ -12,6 +12,9 @@ namespace Translator
 {
     public partial class Translator : Form
     {
+        // Add a list to store past translations
+        private List<string> pastTranslations = new List<string>();
+
         public Translator()
         {
             InitializeComponent();
@@ -60,6 +63,11 @@ namespace Translator
                 Output.Text = Input.Text;
             }
 
+            pastTranslations.Add(Input.Text);
+            pastTranslations.Add("=");
+            pastTranslations.Add(Output.Text);
+            pastTranslations.Add("---------------");
+
         }
 
         private void Quit_Click(object sender, EventArgs e)
@@ -67,5 +75,21 @@ namespace Translator
             this.Close();
         }
 
+        private void History_Click(object sender, EventArgs e)
+        {
+            var pastTranslationsForm = new History(pastTranslations);
+            pastTranslationsForm.ShowDialog();
+        }
+
+        private void Clear_Click(object sender, EventArgs e)
+        {
+            pastTranslations.Clear();
+            MessageBox.Show("Past translations cleared.");
+        }
+
+        private void Translator_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
