@@ -32,7 +32,7 @@ namespace Translator
                 while ((line = reader.ReadLine()) != null)
                 {
                     this.id++;
-                    if (line.Contains(content))
+                    if (line.Equals(content))
                     {
                         //Break if content is found
                         break;

@@ -89,6 +89,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Database\english.txt" />
+    <Content Include="Database\french.txt" />
+    <Content Include="Database\german.txt" />
     <Content Include="Database\spanish.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
