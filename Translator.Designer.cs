@@ -46,26 +46,24 @@ namespace Translator
             // Input
             // 
             this.Input.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.Input.BackColor = System.Drawing.SystemColors.WindowFrame;
+            this.Input.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.Input.Font = new System.Drawing.Font("Times New Roman", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Input.Location = new System.Drawing.Point(93, 145);
-            this.Input.Margin = new System.Windows.Forms.Padding(2);
+            this.Input.Location = new System.Drawing.Point(171, 187);
             this.Input.Multiline = true;
             this.Input.Name = "Input";
-            this.Input.Size = new System.Drawing.Size(355, 200);
+            this.Input.Size = new System.Drawing.Size(530, 306);
             this.Input.TabIndex = 0;
             // 
             // Output
             // 
             this.Output.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.Output.BackColor = System.Drawing.SystemColors.WindowFrame;
+            this.Output.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.Output.Font = new System.Drawing.Font("Times New Roman", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Output.Location = new System.Drawing.Point(509, 145);
-            this.Output.Margin = new System.Windows.Forms.Padding(2);
+            this.Output.Location = new System.Drawing.Point(795, 187);
             this.Output.Multiline = true;
             this.Output.Name = "Output";
             this.Output.ReadOnly = true;
-            this.Output.Size = new System.Drawing.Size(371, 200);
+            this.Output.Size = new System.Drawing.Size(554, 306);
             this.Output.TabIndex = 1;
             // 
             // InputTitle
@@ -73,10 +71,9 @@ namespace Translator
             this.InputTitle.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.InputTitle.AutoSize = true;
             this.InputTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.InputTitle.Location = new System.Drawing.Point(223, 97);
-            this.InputTitle.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.InputTitle.Location = new System.Drawing.Point(365, 113);
             this.InputTitle.Name = "InputTitle";
-            this.InputTitle.Size = new System.Drawing.Size(80, 31);
+            this.InputTitle.Size = new System.Drawing.Size(112, 46);
             this.InputTitle.TabIndex = 2;
             this.InputTitle.Text = "Input";
             // 
@@ -85,10 +82,9 @@ namespace Translator
             this.OutputTitle.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.OutputTitle.AutoSize = true;
             this.OutputTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.OutputTitle.Location = new System.Drawing.Point(645, 97);
-            this.OutputTitle.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.OutputTitle.Location = new System.Drawing.Point(999, 113);
             this.OutputTitle.Name = "OutputTitle";
-            this.OutputTitle.Size = new System.Drawing.Size(102, 31);
+            this.OutputTitle.Size = new System.Drawing.Size(145, 46);
             this.OutputTitle.TabIndex = 3;
             this.OutputTitle.Text = "Output";
             // 
@@ -101,11 +97,11 @@ namespace Translator
             this.InputLang.Items.AddRange(new object[] {
             "English",
             "Spanish"});
-            this.InputLang.Location = new System.Drawing.Point(139, 364);
-            this.InputLang.Margin = new System.Windows.Forms.Padding(2);
+            this.InputLang.Location = new System.Drawing.Point(239, 524);
             this.InputLang.Name = "InputLang";
-            this.InputLang.Size = new System.Drawing.Size(245, 33);
+            this.InputLang.Size = new System.Drawing.Size(366, 45);
             this.InputLang.TabIndex = 4;
+            this.InputLang.SelectedIndexChanged += new System.EventHandler(this.InputLang_SelectedIndexChanged);
             // 
             // OutputLang
             // 
@@ -116,46 +112,44 @@ namespace Translator
             this.OutputLang.Items.AddRange(new object[] {
             "English",
             "Spanish"});
-            this.OutputLang.Location = new System.Drawing.Point(568, 371);
-            this.OutputLang.Margin = new System.Windows.Forms.Padding(2);
+            this.OutputLang.Location = new System.Drawing.Point(883, 535);
             this.OutputLang.Name = "OutputLang";
-            this.OutputLang.Size = new System.Drawing.Size(253, 33);
+            this.OutputLang.Size = new System.Drawing.Size(378, 45);
             this.OutputLang.TabIndex = 5;
             // 
             // Translate
             // 
             this.Translate.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.Translate.BackColor = System.Drawing.Color.LightGreen;
             this.Translate.Font = new System.Drawing.Font("Times New Roman", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Translate.Location = new System.Drawing.Point(578, 412);
-            this.Translate.Margin = new System.Windows.Forms.Padding(2);
+            this.Translate.Location = new System.Drawing.Point(898, 598);
             this.Translate.Name = "Translate";
-            this.Translate.Size = new System.Drawing.Size(241, 120);
+            this.Translate.Size = new System.Drawing.Size(362, 185);
             this.Translate.TabIndex = 6;
             this.Translate.Text = "Translate";
-            this.Translate.UseVisualStyleBackColor = true;
+            this.Translate.UseVisualStyleBackColor = false;
             this.Translate.Click += new System.EventHandler(this.Translate_Click);
             // 
             // Quit
             // 
             this.Quit.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.Quit.BackColor = System.Drawing.Color.IndianRed;
             this.Quit.Font = new System.Drawing.Font("Times New Roman", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Quit.Location = new System.Drawing.Point(139, 412);
-            this.Quit.Margin = new System.Windows.Forms.Padding(2);
+            this.Quit.Location = new System.Drawing.Point(239, 598);
             this.Quit.Name = "Quit";
-            this.Quit.Size = new System.Drawing.Size(241, 120);
+            this.Quit.Size = new System.Drawing.Size(362, 185);
             this.Quit.TabIndex = 7;
             this.Quit.Text = "Quit";
-            this.Quit.UseVisualStyleBackColor = true;
+            this.Quit.UseVisualStyleBackColor = false;
             this.Quit.Click += new System.EventHandler(this.Quit_Click);
             // 
             // History
             // 
             this.History.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.History.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold);
-            this.History.Location = new System.Drawing.Point(397, 412);
-            this.History.Margin = new System.Windows.Forms.Padding(2);
+            this.History.Location = new System.Drawing.Point(627, 598);
             this.History.Name = "History";
-            this.History.Size = new System.Drawing.Size(165, 76);
+            this.History.Size = new System.Drawing.Size(248, 117);
             this.History.TabIndex = 9;
             this.History.Text = "View History";
             this.History.UseVisualStyleBackColor = true;
@@ -165,10 +159,9 @@ namespace Translator
             // 
             this.Clear.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.Clear.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold);
-            this.Clear.Location = new System.Drawing.Point(397, 492);
-            this.Clear.Margin = new System.Windows.Forms.Padding(2);
+            this.Clear.Location = new System.Drawing.Point(627, 721);
             this.Clear.Name = "Clear";
-            this.Clear.Size = new System.Drawing.Size(165, 76);
+            this.Clear.Size = new System.Drawing.Size(248, 117);
             this.Clear.TabIndex = 10;
             this.Clear.Text = "Clear History";
             this.Clear.UseVisualStyleBackColor = true;
@@ -176,10 +169,10 @@ namespace Translator
             // 
             // Translator
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.ClientSize = new System.Drawing.Size(1025, 632);
+            this.BackColor = System.Drawing.Color.SlateGray;
+            this.ClientSize = new System.Drawing.Size(1600, 900);
             this.Controls.Add(this.Clear);
             this.Controls.Add(this.History);
             this.Controls.Add(this.Quit);
@@ -191,7 +184,6 @@ namespace Translator
             this.Controls.Add(this.Output);
             this.Controls.Add(this.Input);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Translator";
             this.Text = "Translator";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;

@@ -91,5 +91,10 @@ namespace Translator
         {
 
         }
+
+        private void InputLang_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
