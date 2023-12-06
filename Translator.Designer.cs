@@ -96,7 +96,9 @@ namespace Translator
             this.InputLang.FormattingEnabled = true;
             this.InputLang.Items.AddRange(new object[] {
             "English",
-            "Spanish"});
+            "Spanish",
+            "German",
+            "French"});
             this.InputLang.Location = new System.Drawing.Point(239, 524);
             this.InputLang.Name = "InputLang";
             this.InputLang.Size = new System.Drawing.Size(366, 45);
@@ -111,7 +113,9 @@ namespace Translator
             this.OutputLang.FormattingEnabled = true;
             this.OutputLang.Items.AddRange(new object[] {
             "English",
-            "Spanish"});
+            "Spanish",
+            "German",
+            "French"});
             this.OutputLang.Location = new System.Drawing.Point(883, 535);
             this.OutputLang.Name = "OutputLang";
             this.OutputLang.Size = new System.Drawing.Size(378, 45);
