@@ -24,11 +24,11 @@ namespace Translator
         private void Translate_Click(object sender, EventArgs e)
         {
             var text = Input.Text.ToString();
-            if (InputLang.Text == "English" && OutputLang.Text == "English")
+            if (InputLang.Text == OutputLang.Text)
             {
                 Output.Text = Input.Text;
             }
-            if (InputLang.Text == "English" && OutputLang.Text == "Spanish")
+            if (InputLang.Text != OutputLang.Text)
             {
                 Output.Clear();
                 string[] words = Input.Text.Split(new char[]{' '});
@@ -43,28 +43,9 @@ namespace Translator
                 }
 
             }
-            if (InputLang.Text == "Spanish" && OutputLang.Text == "English")
-            {
-                Output.Clear();
-                string[] words = Input.Text.Split(new char[] { ' ' });
-                Word single = new Word(InputLang.Text, words[0]);
-                single = single.translate(OutputLang.Text);
-                Output.Text += single.Content + ' ';
-                for (int i = 1; i < words.Length; i++)
-                {
-                    single = new Word(InputLang.Text, words[i]);
-                    single = single.translate(OutputLang.Text);
-                    Output.Text += single.Content + ' ';
-                }
-
-            }
-            if (InputLang.Text == "Spanish" && OutputLang.Text == "Spanish")
-            {
-                Output.Text = Input.Text;
-            }
 
             pastTranslations.Add(Input.Text);
-            pastTranslations.Add("=");
+            pastTranslations.Add(InputLang.Text + "=" + OutputLang.Text);
             pastTranslations.Add(Output.Text);
             pastTranslations.Add("---------------");
 
