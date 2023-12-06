@@ -27,25 +27,30 @@ namespace Translator
 
         private void InitializeComponent()
         {
-            this.pastTranslationsTextBox = new TextBox();
+            this.pastTranslationsTextBox = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // pastTranslationsTextBox
             // 
+            this.pastTranslationsTextBox.BackColor = System.Drawing.SystemColors.InactiveCaption;
+            this.pastTranslationsTextBox.Enabled = false;
             this.pastTranslationsTextBox.Location = new System.Drawing.Point(12, 12);
             this.pastTranslationsTextBox.Multiline = true;
-            this.pastTranslationsTextBox.ScrollBars = ScrollBars.Both; // Set the ScrollBars property
             this.pastTranslationsTextBox.Name = "pastTranslationsTextBox";
-            this.pastTranslationsTextBox.Size = new System.Drawing.Size(300, 200); // Adjust the size as needed
+            this.pastTranslationsTextBox.ScrollBars = System.Windows.Forms.ScrollBars.Both;
+            this.pastTranslationsTextBox.Size = new System.Drawing.Size(378, 276);
             this.pastTranslationsTextBox.TabIndex = 0;
             // 
-            // HistoryForm
+            // History
             // 
-            this.ClientSize = new System.Drawing.Size(400, 300); // Adjust the size as needed
+            this.BackColor = System.Drawing.Color.LightSlateGray;
+            this.ClientSize = new System.Drawing.Size(402, 300);
             this.Controls.Add(this.pastTranslationsTextBox);
-            this.Name = "HistoryForm";
+            this.Name = "History";
+            this.Text = "Translator - History";
             this.ResumeLayout(false);
             this.PerformLayout();
+
         }
 
     }
