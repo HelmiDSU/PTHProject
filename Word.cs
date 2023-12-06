@@ -1,5 +1,6 @@
 ﻿using System;
 using System.IO;
+using System.Windows.Forms;
 
 //Declare namespace
 namespace Translator
@@ -43,6 +44,7 @@ namespace Translator
                 if (line == null)
                 {
                     this.id = 0;
+                    MessageBox.Show("The word " + content + " does not have a translation yet");
                 }
             }
 
