@@ -30,14 +30,14 @@ namespace Translator
             {
                 Output.Clear();
                 string[] words = Input.Text.Split(new char[]{' '});
-                Word single = new Word(InputLang.Text, words[0]);
+                Word single = new Word(InputLang.Text, words[0].ToLower());
                 single = single.translate(OutputLang.Text);
-                Output.Text += single.Content + ' ';
+                Output.Text += single.content + ' ';
                 for (int i = 1; i< words.Length; i++)
                 {
                     single = new Word(InputLang.Text, words[i]);
                     single = single.translate(OutputLang.Text);
-                    Output.Text += single.Content + ' ';
+                    Output.Text += single.content + ' ';
                 }
 
             }

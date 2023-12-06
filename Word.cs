@@ -9,7 +9,7 @@ namespace Translator
     {
         //Declare class variables
         private string language { get; }
-        private string content { get; set; }
+        public string content { get; set; }
         private int id { get; }
         private Word[] synonyms;
 
@@ -62,7 +62,6 @@ namespace Translator
                 {
                     this.content = reader.ReadLine();
                 }
-                this.Content = this.content;
             }
         }
 
@@ -72,11 +71,7 @@ namespace Translator
             return new Word(language, this.id);
         }
 
-        public string Content
-        {
-            get { return content; }
-            set { content = this.content; }
-        }
+        
 
         //Generate synonym word from synonyms list
         public Word generateSynonym()       //Synonym code has not been implemented yet
