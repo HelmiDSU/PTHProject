@@ -44,7 +44,7 @@ namespace Translator
                 if (line == null)
                 {
                     this.id = 0;
-                    MessageBox.Show("The word " + content + " does not have a translation yet");
+                    MessageBox.Show("The word \"" + content + "\" has no current translation.");
                 }
             }
 
